@@ -4,7 +4,6 @@ const CharacterCard = (props) =>{
     const { name, description, picture } = props;
     
     const onClickButton = () => {
-        console.log('hola')
         props.openModal({ name, description, picture })
     }
     return(
@@ -13,7 +12,6 @@ const CharacterCard = (props) =>{
             <img src={picture} alt={name} title={name}></img>
         </div>
         <h3>{name}</h3>
-        <p>{description}</p>
         <button type="button" onClick={onClickButton}>Ver detalle</button>
         </>
     )

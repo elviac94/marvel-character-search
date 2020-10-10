@@ -7,36 +7,32 @@ import '../stylesheets/App.scss';
 
 const App = () => {
   const [data, setData] = useState([]);
-  const [isOpen, setIsOpen] = useState(false)
+  const [infoHero, setInfoHero] = useState(false)
 
   const connectApi = (inputValue) => {
     fetchResult(inputValue).then(respuesta => {
       setData(respuesta.data.results)
     })
-    console.log(inputValue)
   }
-
+  
   const handlerModal = (hero) => {
-    console.log(hero)
-    setIsOpen(true);
+    setInfoHero(hero);
   }
 
   const onCloseModal = () =>{
-    setIsOpen(false)
+    setInfoHero(false)
   }
 
-  const printModal = () => <Modal onCloseModal={onCloseModal} />;
+  const printModal = () => <Modal onCloseModal={onCloseModal} heroData={infoHero} />;
   const printList = () => <CharacterList
     openModal={handlerModal}
     data={data}
   />;
 
-  console.log(`isOpen: ${isOpen}`);
-
   return (
     <div className="App">
       <Searcher connectApi={connectApi} />
-      { isOpen === true ? printModal() : printList()}
+      { infoHero !== false ? printModal() : printList()}
     </div>
   );
 }
