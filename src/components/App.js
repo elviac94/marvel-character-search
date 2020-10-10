@@ -8,7 +8,7 @@ const App = () => {
   const [ data, setData ] = useState([]);
 
   const connectApi = (inputValue)=>{
-    fetchResult().then(respuesta => {
+    fetchResult(inputValue).then(respuesta => {
       setData(respuesta.data.results)
   })
   console.log(inputValue)
