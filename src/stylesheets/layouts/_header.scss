@@ -1,0 +1,19 @@
+header{
+    background-color: black;
+    width: 100%;
+    height: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    & h2{
+        font-family: 'Bangers', cursive;
+        width: 100%;
+        color: #EC1D24;
+        font-weight: 400;
+        text-transform: uppercase;
+        font-size: 45px;
+        padding: 5px;
+        text-align: center;
+    }
+}
