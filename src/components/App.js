@@ -23,7 +23,7 @@ const App = () => {
     setInfoHero(false)
   }
 
-  const printModal = () => <Modal onCloseModal={onCloseModal} heroData={infoHero} />;
+  const printModal = () => <Modal onCloseModal={onCloseModal} heroData={infoHero} /> ;
   const printList = () => <CharacterList
     openModal={handlerModal}
     data={data}

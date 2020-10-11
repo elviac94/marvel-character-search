@@ -1,0 +1,31 @@
+.picture__container{
+    width: 180px;
+    height: 180px;
+    border-radius: 8px;
+    
+
+    & img {
+        width: 100%;
+        max-height: 180px;
+        border-radius: 8px;
+    }
+}
+
+.character__name{
+    color: white;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.detail__button{
+    background-color: #EC1D24;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: white;
+    border: none;
+    outline: none;
+    width: 125px;
+    height: 30px;
+    border-radius: 8px;
+    margin-bottom: 4px;
+}

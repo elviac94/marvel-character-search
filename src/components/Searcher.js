@@ -12,14 +12,14 @@ const Searcher = (props) =>{
     }
 
     return(
-        <div>
+        <div className="searcher__container">
             <input
             placeholder="Ej: Thor"
             type="text"
             value={inputValue}
             onChange={handlerInputValue}
             />
-            <button onClick={getCharacters}>Enviar</button>
+            <button className="searcher__button" onClick={getCharacters}>Enviar</button>
         </div>
     )
 }
