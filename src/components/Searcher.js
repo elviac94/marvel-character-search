@@ -9,6 +9,7 @@ const Searcher = (props) =>{
     
     const getCharacters = () =>{
         props.connectApi(inputValue)
+        props.handlerLoader();
     }
 
     return(

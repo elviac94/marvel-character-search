@@ -42,6 +42,7 @@
         outline: none;
         border-radius: 8px;
         -webkit-tap-highlight-color: none;
+        box-shadow: 0 12px 10px -8px gray;
 
         @media all and(min-width:768px) {
             height: 40px;

@@ -12,8 +12,12 @@ header{
         color: #EC1D24;
         font-weight: 400;
         text-transform: uppercase;
-        font-size: 45px;
+        font-size: 30px;
         padding: 5px;
         text-align: center;
+
+        @media all and (min-width:768px){
+            font-size: 45px;
+        }
     }
 }
